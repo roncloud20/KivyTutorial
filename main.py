@@ -1,10 +1,12 @@
 import kivy
 from kivy.app import App
-from kivy.uix.label import Label
+from kivy.uix.gridlayout import GridLayout
 
-class MyApp(App):
+class Template(GridLayout):
+    pass
+class Major(App):
     def build(self):
-        return Label(text="Kivy Class 2022")
+        return Template()
 
 if __name__ == '__main__':
-    MyApp().run()
+    Major().run()
